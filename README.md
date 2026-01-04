@@ -1,6 +1,6 @@
 # Product Management Application
 
-🔗 Live Demo: https://your-live-link-here.vercel.app
+### **🔗 Live Demo**:  https://product-manage-sys.netlify.app/
 
 
 ## 📌 Overview
@@ -73,7 +73,7 @@ This project is a **Product Management Application** built as part of an assignm
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/kakuPandeyy/Product-Management-App.git
    ```
 2. Navigate to the project directory:
 
