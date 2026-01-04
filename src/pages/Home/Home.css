@@ -1,0 +1,262 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.header h1 {
+  color: #0087db;
+  background-image: linear-gradient(
+    45deg,
+    #0087db 24%,
+    #f28218 52%,
+    #8061e2 71%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* sub header */
+
+.sub-header {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  gap: 350px;
+}
+
+/* display-section */
+
+.display-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #ebe7e7;
+  padding-left: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+/* display-toggle */
+
+.display-toggle {
+  border: #666 1px outset;
+}
+
+/* Results Info */
+.results-info {
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.results-info p {
+  margin: 0;
+}
+
+/* Table Styles */
+
+.table-wrapper {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header-row {
+  background-color: #ff9a03;
+}
+
+.table-header {
+  padding: 15px;
+  text-align: left;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+.table-row {
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+.table-row:hover {
+  background-color: #f9f9f9;
+}
+
+.table-row.even {
+  background-color: #f9f9f9;
+}
+
+.table-row.odd {
+  background-color: #ffffff;
+}
+
+.table-cell {
+  padding: 15px;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #005461;
+}
+.table-cell.in-stock {
+  color: #16a34a;
+}
+
+.table-cell.out-of-stock {
+  color: #dc2626;
+}
+.table-cell.price-cell {
+  color: #2196f3;
+}
+.table-cell.category-cell {
+  color: var(--flag-color);
+  font-weight: 500;
+  font-size: large;
+}
+/* Grid Styles */
+.grid-container {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* overflow: hidden; */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.flag {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  min-width: 100px;
+  height: 30px;
+  background: var(--flag-color);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px 12px 0 12px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #005461;
+  margin: 0 0 10px 0;
+}
+
+.card-category {
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 10px 0;
+  font-weight: 500;
+}
+
+.card-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2196f3;
+  margin: 0;
+}
+.card-stock {
+  font-size: 21px;
+  font-weight: bold;
+  color: #2196f3;
+  margin: 0;
+}
+.card-stock.in-stock {
+  color: #16a34a;
+}
+
+.card-stock.out-of-stock {
+  color: #dc2626;
+}
+
+/* Empty State */
+.empty-state {
+  background-color: #ffffff;
+  padding: 60px 40px;
+  text-align: center;
+  border-radius: 8px;
+  color: #999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Responsive Design */
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .sub-header {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .sub-header {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 12px;
+  }
+  .sub-header {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

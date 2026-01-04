@@ -1,0 +1,56 @@
+.toggle-root {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 5px;
+}
+.toggle-border {
+  border: #555 solid;
+}
+
+.toggle-label {
+  color: #0087db;
+  background-image: linear-gradient(45deg, #0087db 24%, #8061e2 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-size: x-large;
+  font-weight: 400;
+}
+
+.toggle-container {
+  display: flex;
+  background: #eaeaea;
+  border-radius: 20px;
+  padding: 6px;
+
+  max-height: 61px;
+}
+
+.toggle-btn {
+  border: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 6px 14px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+  transition: all 0.2s ease;
+}
+
+.toggle-btn.active {
+  background: #348f50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #348f50,
+    #56b4d3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #348f50, #56b4d3);
+  color: #fff;
+  padding: 12px;
+}

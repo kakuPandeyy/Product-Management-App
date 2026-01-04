@@ -1,0 +1,45 @@
+.pm-card {
+  width: 320px;
+  padding: 17px;
+  max-height: 162px;
+
+  border-radius: 12px;
+  background: #ffffff;
+  border-left: 6px solid #2563eb; /* blue left border */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.pm-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.pm-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pm-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.pm-card-desc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.pm-card-action {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #2563eb;
+}

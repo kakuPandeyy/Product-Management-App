@@ -1,0 +1,82 @@
+.table-wrapper {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header-row {
+  background-color: #ff9a03;
+}
+
+.table-header {
+  padding: 15px;
+  text-align: left;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+.table-row {
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+.table-row:hover {
+  background-color: #f9f9f9;
+}
+
+.table-row.even {
+  background-color: #f9f9f9;
+}
+
+.table-row.odd {
+  background-color: #ffffff;
+}
+
+.table-cell {
+  padding: 15px;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #005461;
+}
+.table-cell.in-stock {
+  color: #16a34a;
+}
+
+.table-cell.out-of-stock {
+  color: #dc2626;
+}
+.table-cell.price-cell {
+  color: #2196f3;
+}
+.table-cell.category-cell {
+  color: var(--flag-color);
+  font-weight: 500;
+  font-size: large;
+}
+
+@media (max-width: 768px) {
+  .controls-section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .controls-section {
+    padding: 15px;
+  }
+
+  .table-cell,
+  .table-header {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
