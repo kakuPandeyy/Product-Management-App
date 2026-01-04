@@ -9,6 +9,13 @@ This project is a **Product Management Application** built as part of an assignm
 
 ---
 
+## 🧭 Routing
+
+**The application uses two main routes:**
+
+- **<u>/ (Home Route): </u>**Displays the product list with List View & Card View, search with debounce, and pagination.
+- **_<u>/ProductManger</u>_:** Used to add new products and update existing products using a validated form.
+
 ## ✨ Features
 
 ### 1. Product List Display
